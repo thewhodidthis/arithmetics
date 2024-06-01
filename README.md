@@ -35,11 +35,13 @@ Expect named exports for each helper,
 ```js
 import * as math from "@thewhodidthis/arithmetics"
 
-const stretch = math.mag(3, 4)
-const percent = math.map(0.5, 0, 1, 0, 100)
+const d = math.dist(0, 0, 3, 4)
 
-console.assert(stretch, 5)
-console.assert(percent, 50)
+console.assert(d === 5)
+
+const p = math.map(0.5, 0, 1, 0, 100)
+
+console.assert(p === 50)
 ```
 
 ## see also
